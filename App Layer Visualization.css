@@ -1,0 +1,220 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit; 
+}
+body {
+	margin: 0;
+	background-color: #F9FBF8;
+	font-family: sans-serif; 
+	display: grid;
+	/*grid-template-row: 1fr 2fr 4fr 1fr;*/
+	/*display: flex;
+	flex-direction: column;*/
+}
+header {
+	display: grid;
+	grid-template-row: 1fr 3fr 2fr;
+}
+.phone-b {
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
+	position: fixed;
+	z-index: 2;	
+}
+.wifi, .battery, .time {
+	color: rgba(255,255,255,0.7);
+	dipslay: inline-block;
+	float: right;
+	padding: 0 5px 0 5px;
+	display: inline-block;
+}
+.battery {
+	transform: rotate(90deg);
+	width: 2rem;
+	opacity: 0.8;
+	/*color: rgba(255,255,255,0.7);*/
+	padding-top: 10px
+}
+.wifi {
+	margin-top: 6px;
+}
+.time {
+	font-size: 10px;
+}
+.mtn {
+	width: 100%;
+}
+.bar {
+	background-color: #00A8FF;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	z-index: 2;
+}
+.ctrls a {
+	color: rgba(0,0,0,0.8);
+	font-size: 25px;
+	display: inline-block;
+}
+.fa-arrow-left {
+	padding: 12px 0 0 20px;
+	cursor: pointer;
+}
+.share {
+	float: right;
+	padding: 12px 20px 0 0;
+	cursor: pointer;
+}
+.fa-arrow-left, .share {
+	margin-bottom: -27px;
+}
+h1 {
+	text-align: center;
+	font-size: 24px;
+}
+.sub-t {
+	font-size: 13px;
+	text-align: center;
+	color: rgba(0,0,0,0.8);
+	margin-top: -10px;
+	padding-bottom: 20px;
+}
+.fa-plus {
+	color: rgba(0,0,0,0.6);
+	background-color: yellow;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	font-size: 24px;
+	padding: 12px 0 0 13px;
+	margin: -45px 0 0 10px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.fixed-nav nav {
+	position: fixed;
+	width: 100%;
+}
+.fixed-nav .bar {
+	box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+.fixed-nav .fa-plus {
+	box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+}
+.first {
+	margin-top: 40px; /*Booo*/
+	color: rgba(20,20,20,0.9);
+}
+.text p {
+	padding: 0 30px 5px 75px;
+	color: rgba(20,20,20,0.9);
+}
+.first-sect-i {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 0 0 75px;
+}
+.live {
+	font-family: sans-serif;
+	font-size: 16px;
+	display: inline;
+	margin: 0 0 0 -50px;
+    color: rgba(0,0,0,0.3);
+    opacity: 0.3;
+}
+.camera {
+	color: rgba(0,0,0,0.3);
+	font-size: 20px;
+	padding-bottom: 50px;
+	z-index: -1;
+}
+.buttons {
+	display: flex;
+	flex-direction: row;
+}
+.button {
+	font-family: sans-serif;
+	color: rgba(0,168,255,1.0);
+	border: 2px solid rgba(0,168,255,1.0);
+	padding: 8px;
+	margin: 0 25px 0 0;
+	width: 80px;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	border-radius: 0.25em;
+}
+.button:hover {
+	background-color: rgba(0,168,255,0.7);
+	color: white;
+}
+hr {
+	width: 80%;
+	margin: 50px 0 50px 0;
+}
+h2 {
+	color: rgba(0,168,255,1.0);
+	padding: 0 0 0 75px;
+}
+.person {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 0 0 0 10px;
+	box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
+	display: inline;
+}
+h3 {
+	padding: 0 0 0 75px;
+	color: rgba(50,50,50,1);
+	margin: -28px 0 0 0;
+}
+.social-wrap {
+	float: right;
+	padding: 25px 75px 0 0;
+}
+.social-i {
+	color: rgba(0,168,255,1.0); 
+	font-size: 40px;
+	margin: 0 10px 0 10px;
+	cursor: pointer;
+}
+.phone-nav {
+	background-color: rgba(0,0,0,1.0);
+	height: 40px; /*height: 100%;*/
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 2;
+	position: fixed;
+	bottom: 0;
+}
+.triangle, .circle {
+	font-size: 35px;
+	color: rgba(20,20,20,0.9);
+   -webkit-text-fill-color: rgba(20,20,20,0.9);
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: rgba(255,255,255,1.0);
+   flex: 1 1 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   cursor: pointer;
+}
+.square {
+	font-size: 22px;
+	color: rgba(20,20,20,0.9);
+   -webkit-text-fill-color: rgba(20,20,20,0.9);
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: rgba(255,255,255,1.0);
+   flex: 1 1 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   cursor: pointer;
+}
+
+/*https://dribbble.com/shots/2238573-Google-I-O-App-Layer-Visualization*/
+
